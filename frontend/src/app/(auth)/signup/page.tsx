@@ -12,7 +12,7 @@ interface FormData {
   password: string;
 }
 
-const page = () => {
+const Page = () => {
   const Router = useRouter();
   const [imageFile, setImageFile] = React.useState<File | null>(null);
 
@@ -173,4 +173,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

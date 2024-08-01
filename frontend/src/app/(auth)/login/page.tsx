@@ -14,7 +14,7 @@ interface FormData {
   password: string;
 }
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const auth = useAppSelector((state) => state.authReducer);
   const dispatch = useDispatch<AppDispatch>();
@@ -109,4 +109,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

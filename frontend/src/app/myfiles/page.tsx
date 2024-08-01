@@ -23,7 +23,8 @@ interface File {
 
 let socket: any = null;
 let apiurl: string = process.env.NEXT_PUBLIC_API_URL || "";
-const page = () => {
+
+const Page = () => {
   const router = useRouter();
 
   const dispatch = useDispatch<AppDispatch>();
@@ -180,4 +181,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

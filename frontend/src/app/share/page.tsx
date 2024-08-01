@@ -12,7 +12,7 @@ import io from "socket.io-client";
 let socket: any = null;
 let apiurl: string = process.env.NEXT_PUBLIC_API_URL || "";
 
-const page = () => {
+const Page = () => {
   const dispatch = useDispatch<AppDispatch>();
   const auth = useAppSelector((state) => state.authReducer);
 
@@ -254,4 +254,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
